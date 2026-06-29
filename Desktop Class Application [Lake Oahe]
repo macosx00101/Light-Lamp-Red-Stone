@@ -1,0 +1,41 @@
+#Minecraft (Vanilla) Version 1.20.4
+
+#Desktop Class Application 
+
+#Lake Oahe (setup version 2.0)#
+
++L_1 ,RS -1 = RS1 /NET.MIN << 001 //. S1 (Service 1 Rate)
+  
+=L_2 ,RS -2 = RS2 /NET.MIN >> 002 //. S2 (Service 2 Rate)
+  
++L_3 ,RS -3 = RS3 /NET.MIN << 003 //. S3 (Service 3 Rate)
+  
+=L_4 ,RS -4 = RS4 /NET.MIN >> 004 //. S4 (Service 4 Rate)
+  
+---------------------------------------------------------------
+=+=+=+=+=+=+=+=+=  += 001 2 3 5 
+=+=+=+=+=+=+=+=+=  += 002 3 4 6
+=+=+=+=+=+=+=+=+=  += 003 4 5 7
+=+=+=+=+=+=+=+=+=  += 004 5 6 8
+=+=+=+=+=+=+=+=+=  += 005 6 7 9
+=+=+=+=+=+=+=+=+=  += 006 7 8 10     [R]= Prossing Services
+=+=+=+=+=+=+=+=+=  += 007 8 9 11
+=+=+=+=+=+=+=+=+=  += 008 9 10 12
+=+=+=+=+=+=+=+=+=  += 009 10 11 13 
+=+=+=+=+=+=+=+=+=  += 010 11 12 14
+=+=+=+=+=+=+=+=+=  += 011 12 13 15
+[L]= Length of display ----------------------------------------
+  
+Service Rate:
+
+Service Rate refers to the processing time required from each site. The closer the unit, the faster it will process.
+
+Xtra Core:
+
+[I]   L_,R 0 9  <11: This configuration sets the command block (CB) input to 9, corresponding to the number of set blocks on each time the user inputs the system.
+  
+[II]  L_,R 0 10 <12: This configuration sets the CB input to 10, but it utilizes the Light Lamp Red Core (LLRC). Each color change of the LLRC will be represented by a single CB core.
+  
+[III] L_,R 0 10 <13: This configuration provides an overview of each single input and its corresponding grasp.
+  
+[IV]  L_,R 0 11 <14: This configuration informs the LLRC of each component of the user’s input or single back.
